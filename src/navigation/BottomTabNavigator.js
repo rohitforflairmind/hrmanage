@@ -5,6 +5,7 @@ import EmployeeScreen from '../screens/EmployeeScreen';
 import HRScreen from '../screens/HRScreen';
 import LeadScreen from '../screens/LeadScreen';
 import { useSelector } from 'react-redux';
+import PRScreen from '../screens/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +18,7 @@ export default function BottomTabNavigator() {
       {user.role === 'Employee' && <Tab.Screen name="Employee" component={EmployeeScreen} />}
       {user.role === 'HR' && <Tab.Screen name="HR" component={HRScreen} />}
       {user.role === 'Lead' && <Tab.Screen name="Lead" component={LeadScreen} />}
+      <Tab.Screen name ="profile" component={PRScreen}/>
     </Tab.Navigator>
   );
 }

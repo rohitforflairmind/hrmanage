@@ -10,20 +10,20 @@ export default function SplashScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/images/booking.png')} style={styles.logo} />
+      <Image source={require('../assets/images/FMLogonew.png')} style={styles.logo} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+
+
     alignItems: 'center',
     backgroundColor: '#fff',
   },
   logo: {
-    width: 150,
+    width:50,
     height: 150,
   },
 });

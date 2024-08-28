@@ -4,7 +4,7 @@ import { View, ActivityIndicator, Image, StyleSheet } from 'react-native';
 export default function LoadingScreen() {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/images/loading-logo.png')} style={styles.logo} />
+      {/* <Image source={require('../assets/images/loading-logo.png')} style={styles.logo} /> */}
       <ActivityIndicator size="large" color="#0000ff" />
     </View>
   );
